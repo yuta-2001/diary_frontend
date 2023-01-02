@@ -49,8 +49,9 @@ const Login = () => {
         <GuestLayout>
             <AuthCard
                 logo={
-                    <Link href="/">
+                    <Link href="/" className="flex items-center">
                         <ApplicationLogo className="w-20 h-20 fill-current text-gray-500" />
+                        <span className="inline-block ml-4 text-lg">Diary</span>
                     </Link>
                 }>
                 {/* Session Status */}
@@ -59,7 +60,7 @@ const Login = () => {
                 <form onSubmit={submitForm}>
                     {/* Email Address */}
                     <div>
-                        <Label htmlFor="email">Email</Label>
+                        <Label htmlFor="email">メールアドレス</Label>
 
                         <Input
                             id="email"
@@ -76,7 +77,7 @@ const Login = () => {
 
                     {/* Password */}
                     <div className="mt-4">
-                        <Label htmlFor="password">Password</Label>
+                        <Label htmlFor="password">パスワード</Label>
 
                         <Input
                             id="password"
@@ -110,7 +111,7 @@ const Login = () => {
                             />
 
                             <span className="ml-2 text-sm text-gray-600">
-                                Remember me
+                                ログイン情報を保持する
                             </span>
                         </label>
                     </div>
@@ -119,10 +120,10 @@ const Login = () => {
                         <Link
                             href="/forgot-password"
                             className="underline text-sm text-gray-600 hover:text-gray-900">
-                            Forgot your password?
+                            パスワードを忘れた方はこちら
                         </Link>
 
-                        <Button className="ml-3">Login</Button>
+                        <Button className="ml-3">サインイン</Button>
                     </div>
                 </form>
             </AuthCard>
