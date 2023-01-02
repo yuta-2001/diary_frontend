@@ -14,7 +14,6 @@ const Calendar = () => {
 			plugins={[dayGridPlugin, interactionPlugin]}
 			locales={allLocales}
 			locale="ja"
-			initialEvents={[{ title: 'initial event', start: new Date() }]}
 			dateClick={handleDateClick}
 		/>
 	)

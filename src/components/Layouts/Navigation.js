@@ -38,7 +38,12 @@ const Navigation = ({ user }) => {
                             <NavLink
                                 href="/dashboard"
                                 active={router.pathname === '/dashboard'}>
-                                Dashboard
+                                日記管理
+                            </NavLink>
+                            <NavLink
+                                href="/"
+                                active={router.pathname === '/'}>
+                                他の人の日記を見る
                             </NavLink>
                         </div>
                     </div>
@@ -114,6 +119,11 @@ const Navigation = ({ user }) => {
                             href="/dashboard"
                             active={router.pathname === '/dashboard'}>
                             Dashboard
+                        </ResponsiveNavLink>
+                        <ResponsiveNavLink
+                            href="/"
+                            active={router.pathname === '/'}>
+                            他の人の日記を見る
                         </ResponsiveNavLink>
                     </div>
 
