@@ -8,6 +8,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "@fullcalendar/daygrid": "^6.0.2",
+    "@fullcalendar/react": "^6.0.2",
     "@headlessui/react": "^1.4.2",
     "axios": "^0.21.1",
     "next": "^13.0.3",

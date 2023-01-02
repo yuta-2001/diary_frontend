@@ -1,5 +1,6 @@
-import AppLayout from '@/components/Layouts/AppLayout'
-import Head from 'next/head'
+import AppLayout from '@/components/Layouts/AppLayout';
+import Head from 'next/head';
+import Calendar from '@/components/Calendar';
 
 const Dashboard = () => {
     return (
@@ -16,8 +17,8 @@ const Dashboard = () => {
                 </title>
             </Head>
 
-            <div>
-                
+            <div className="bg-white w-2/3 mx-auto mt-10">
+                <Calendar />
             </div>            
         </AppLayout>
     )
